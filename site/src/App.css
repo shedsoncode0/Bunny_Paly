@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700&display=swap");
+
+* html {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Open Sans", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+::-webkit-scrollbar {
+  width: 5px;
+  background-color: rgb(29, 29, 29);
+}
+
+/* ::-webkit-slider-thumb {
+  width: 8px;
+  background-color: chartreuse;
+  color: blueviolet;
+}
+
+::-webkit-scrollbar-track {
+  background-color: aqua;
+  color: black;
+} */
+
+@media screen and (max-width: 520px) {
+  .player {
+    width: 390px;
+  }
+}
+
+@media screen and (max-width: 401px) {
+  .player {
+    width: 290px;
+  }
+}
