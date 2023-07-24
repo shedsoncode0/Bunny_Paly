@@ -17,12 +17,8 @@ export const MainProvider = ({ children }) => {
    const myPassword = "password";
 
    const handleSignUp = () => {
-      if (formData.name === myName && formData.email === myEmail && formData.password == myPassword) {
-         setSignUp(true);
-         // setInterval(() => {
-         //    window.location.replace("http://localhost:3001/main");
-         // }, 1000);
-      } else return;
+      setSignUp(true);
+      return;
    }
 
    const [currentAccount, setCurrentAccount] = useState("");
